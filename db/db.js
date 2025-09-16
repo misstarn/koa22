@@ -1,3 +1,5 @@
+// 这个没用，sqlite的设置，最开始的，后面用的mysql
+
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 

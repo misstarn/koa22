@@ -1,0 +1,51 @@
+# --------------------
+# Node / Koa 项目常用忽略配置
+# --------------------
+
+# Node 模块依赖
+node_modules/
+uploads/
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 环境变量配置
+.env
+.env.local
+.env.*.local
+
+# 调试输出
+*.log
+logs/
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# 覆盖率报告
+coverage/
+
+# 临时缓存
+.tmp/
+.temp/
+.cache/
+
+# 构建输出
+dist/
+build/
+
+# VSCode 配置（个人环境相关）
+.vscode/
+.idea/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 依赖锁文件（按需忽略）
+package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

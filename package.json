@@ -1,0 +1,53 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "start": "cross-env NODE_ENV=production nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "@koa/router": "^14.0.0",
+    "@tailwindcss/cli": "^4.1.11",
+    "@tailwindcss/postcss": "^4.1.11",
+    "bcryptjs": "^3.0.2",
+    "concurrently": "^9.2.0",
+    "dayjs": "^1.11.13",
+    "dotenv": "^17.1.0",
+    "ejs": "^3.1.10",
+    "file-type": "^21.0.0",
+    "image-size": "^2.0.2",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "koa": "^3.0.0",
+    "koa-body": "^6.0.1",
+    "koa-bodyparser": "^4.4.1",
+    "koa-jwt": "^4.0.4",
+    "koa-mount": "^4.2.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^8.1.0",
+    "koa2-cors": "^2.0.6",
+    "koa2-swagger-ui": "^5.11.0",
+    "mysql2": "^3.14.1",
+    "node-gyp": "^11.2.0",
+    "nodemailer": "^7.0.4",
+    "sequelize": "^6.37.7",
+    "sharp": "^0.34.3",
+    "socket.io": "^4.8.1",
+    "sqlite3": "^5.1.7",
+    "swagger-jsdoc": "^6.2.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.10",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}

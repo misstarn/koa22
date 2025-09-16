@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="text-red-500 text-center text-2xl font-bold mb-4 mt-4 underline">
+        title
+    </div>
+    <div class="flex items-center justify-center">
+        <div class="flex-1 w-1/3">左侧</div>
+        <div class="w-2/3 grid grid-cols-3">
+            <div class="border flex items-center justify-center py-10">1</div>
+            <div class="border flex items-center justify-center">2</div>
+            <div class="border flex items-center justify-center">3</div>
+        </div>
+    </div>
+    <style>
+        ::backdrop {
+            background-image: linear-gradient(
+                45deg,
+                magenta,
+                rebeccapurple,
+                dodgerblue,
+                green
+            );
+            opacity: 0.75;
+        }
+
+       .dialog{
+        width: 90vw;
+        height: 90vh;
+        margin: auto;
+       }
+       .dialog-box{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+       }
+    </style>
+    <dialog class="dialog">
+        <div class="dialog-box">
+            <button autofocus>Close</button>
+            <button value="cancel" formmethod="dialog">Close</button>
+            <p>This modal dialog has a groovy backdrop!</p>
+        </div>
+    </dialog>
+    <button>Show the dialog</button>
+    <script>
+        const dialog = document.querySelector("dialog")
+        const showButton = document.querySelector("dialog + button")
+        const closeButton = document.querySelector("dialog button")
+
+        showButton.addEventListener('click', () => {
+            dialog.showModal();
+        })
+
+        closeButton.addEventListener('click', () => {
+            dialog.close()
+        })
+    </script>
+    <address>
+        <a href="mailto:jim@example.com">jim@example.com</a><br />
+        <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+    </address>
+</body>
+</html>
